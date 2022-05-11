@@ -38,7 +38,7 @@ namespace PLUMAPPLICATION
                 MessageBox.Show("Your password was reset successfully");
                 Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("There was an error! Please try again");
 

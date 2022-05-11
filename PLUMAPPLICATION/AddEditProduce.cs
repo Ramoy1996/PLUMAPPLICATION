@@ -158,7 +158,7 @@ namespace PLUMAPPLICATION
                 Close();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Something went wrong! Please to try again");
             }

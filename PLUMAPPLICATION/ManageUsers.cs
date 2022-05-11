@@ -29,6 +29,7 @@ namespace PLUMAPPLICATION
         {
             try
             {
+              
                 var id = (int)GVManageUsers.SelectedRows[0].Cells["Id"].Value;
 
                 var RPassword = pLUMEntities.Users.FirstOrDefault(F => F.Id == id);
@@ -39,7 +40,7 @@ namespace PLUMAPPLICATION
 
                 MessageBox.Show($"{RPassword.Username}'s Password has been reset!");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Something went wrong! Please to try again");
             }

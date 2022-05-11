@@ -76,19 +76,11 @@ namespace PLUMAPPLICATION
             if (_roleName != "Admin")
             {
                 manageUsersToolStripMenuItem.Visible = false;
-            }
-
-
-            var username1 = _user.Username;
-            logintext.Text = $"Logged In As: {username1}";
-            if (_roleName != "user")
-            {
                 viewProduceToolStripMenuItem.Visible = false;
             }
-
         }
 
-        private void HomePage_SizeChanged(object sender, EventArgs e)
+            private void HomePage_SizeChanged(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Minimized)
             {
